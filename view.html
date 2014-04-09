@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Задание 6</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">		
+
+		<script type="text/template" id="tpl_name">
+			<%= name %>
+		</script>
+
+		<script type="text/template" id="tpl_group">
+			<div id="page_group">
+				<div class="content list_group">
+					<ul class="list">
+					</ul>
+				</div>
+				<div class="buttons">
+					<input type="button" value="Add" id="bt_add"/>
+				</div>
+			</div>
+		</script>
+
+		<script type="text/template" id="tpl_edit">			
+			<div id="page_edit">
+				<div class="content">
+					<div class="tabs">
+						<ul>
+							<li id="tab1" class="active">Name</li>
+							<li id="tab2">Contacts</li>
+							<li id="tab3">Personal</li>
+						</ul>
+					</div>
+				
+					<div id="tab_content">
+						<div class="tab_page tab1">		
+							<ul>
+								<li>
+									Name: <input id="name" type="text" value=<%= name %>>
+								</li>
+								<li>
+									Last name: <input id="last_name" type="text" value=<%= last_name %>>
+								</li>
+							</ul>
+						</div>
+
+						<div class="tab_page hidden tab2">
+							<ul>
+								<li>
+									Phone: <input id="phone" type="text" value=<%= phone %>>
+								</li>
+								<li>
+									Skype: <input id="skype" type="text" value=<%= skype %>>
+								</li>
+								<li>
+									e-mail: <input id="e_mail" type="text" value=<%= e_mail %>>
+								</li>
+							</ul>
+						</div>
+		
+						<div class="tab_page hidden tab3">
+							<ul>
+								<li>
+									Age: <input id="age" type="text" value=<%= age %>>
+								</li>
+								<li>
+									Sex: <input id="sex" type="text" value=<%= sex %>>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="buttons">
+					<input type="button" value="Preview" id="bt_preview"/>
+				</div>
+			</div>
+		</script>
+
+		<script type="text/template" id="tpl_info">			
+			<div id="page_info">
+				<div class="content">
+					<table>
+						<tr>
+							<td>Name:</td>
+							<td><%= name %></td>
+						</tr>
+						<tr>
+							<td>Last name:</td>
+							<td><%= last_name %></td>
+						</tr>
+						<tr>
+							<td>Skype:</td>
+							<td><%= skype %></td>
+						</tr>
+						<tr>
+							<td>Phone:</td>
+							<td><%= phone %></td>
+						</tr>
+						<tr>
+							<td>e-mail:</td>
+							<td><%= e_mail %></td>
+						</tr>
+						<tr>
+							<td>Age:</td>
+							<td><%= age %></td>
+						</tr>
+						<tr>
+							<td>Sex:</td>
+							<td><%= sex %></td>
+						</tr>
+					</table>				
+				</div>
+				<div class="buttons">
+					<input type="button" value="Save" id="bt_save"/>
+					<input type="button" value="Edit" id="bt_edit"/>
+				</div>
+			</div>
+		</script>
+
+		<script type="text/javascript" src="lib/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="lib/underscore-min.js"></script>
+		<script type="text/javascript" src="lib/backbone-min.js"></script>
+		<script type="text/javascript" src="lib/mediator.js"></script>
+		<script type="text/javascript" src="modelPerson.js"></script>
+		<script type="text/javascript" src="collectionPerson.js"></script>
+		<script type="text/javascript" src="viewPerson.js"></script>
+		<script type="text/javascript" src="viewEdit.js"></script>
+		<script type="text/javascript" src="viewGroup.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+		<link type="text/css" rel="stylesheet" href="style.css">
+		
+	</head>	
+	<body>
+		<div id="content">			
+		</div>
+	</body>
+</html>

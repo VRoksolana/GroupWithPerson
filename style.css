@@ -1,0 +1,109 @@
+.content {
+	width:600px;
+	height:350px;
+	background:#EEE8CD;
+	position:relative;
+}
+
+.buttons input{
+	width:120px;
+	height:30px;
+	font-size:16px;
+}
+
+.buttons{
+	position:static;
+	margin-top:10px;
+	margin-left:350px;
+}
+
+.hidden{
+	display:none;
+}
+
+li {
+	list-style-type:none;
+}
+
+.tabs{
+	float:left;
+}
+
+.tabs ul li { 			
+	font-size:35px; 
+	width:200px;
+	height:50px;
+	padding-left:20px;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+.active{
+	background:#D2B48C;
+	cursor:pointer;
+}
+
+.tabs ul li:hover{
+	background:#D2B48C;
+	cursor:pointer;
+}
+
+.tab_page{
+	margin-left:190pt; 
+	margin-top:20pt;
+	padding-top:20pt; 
+	background:#D2B48C; 
+	height:324px; 
+	width:350px;
+}
+			
+.tab_page ul li{
+	margin-bottom:40px; 
+	font-size:25px; 
+	width:300px;
+}
+
+.list_group{
+	font-size:20px;
+	padding-top:10px;
+	padding-left:25px;
+}
+
+.list_group ul{
+	margin-left:-65px; 
+}
+
+.list_group ul li{
+	padding-left:50px;
+}
+
+.list_group ul li:hover{
+	background:#D2B48C;
+	cursor:pointer;
+}
+
+
+#fields {
+	margin-left:200px;
+}
+
+#info_person {
+	margin-left:30pt; 
+	margin-top:40pt;
+	padding-top:20pt; 
+	background:#EEE8CD; 
+	height:300px; 
+	width:750px;
+	display:none;
+}
+td {font-size:25px;
+	height:20px;
+	text-align: right; 
+	}
+
+#fields {float:left;}
+	
+table{
+	margin-left: 180px;
+	padding-top: 60px;
+}
